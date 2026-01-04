@@ -7,11 +7,20 @@ async function inject(id, file) {
   el.innerHTML = html;
 }
 
+function normalizeHref(href) {
+  if (!href) return "";
+  // Enlever paramètres et ancres
+  href = href.split("#")[0].split("?")[0];
+  // Enlever ./ au début
+  href = href.replace(/^\.\//, "");
+  return href.toLowerCase();
+}
+
 function markActiveLink() {
-  const current = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  const current = normalizeHref(location.pathname.split("/").pop() || "index.html");
 
   document.querySelectorAll(".menu a").forEach(a => {
-    const href = (a.getAttribute("href") || "").toLowerCase();
+    const href = normalizeHref(a.getAttribute("href"));
     if (href === current) {
       a.setAttribute("aria-current", "page");
     } else {

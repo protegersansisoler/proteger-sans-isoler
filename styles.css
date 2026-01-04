@@ -57,6 +57,13 @@ a:hover{ text-decoration:underline; }
   z-index:9999;
 }
 
+/* Focus visible (WCAG) */
+a:focus-visible, button:focus-visible, .btn:focus-visible{
+  outline:3px solid var(--focus);
+  outline-offset:3px;
+  border-radius:14px;
+}
+
 /* HEADER */
 header{
   position:sticky;
@@ -90,7 +97,7 @@ header{
   margin-top:8px;
 }
 
-/* Brand = badge plus “signature” */
+/* Brand = badge plus signature */
 .brand{
   display:flex;
   gap:12px;
@@ -102,7 +109,7 @@ header{
   box-shadow:0 8px 18px rgba(16,42,67,.06);
 }
 
-/* ✅ Logo SVG */
+/* Logo SVG */
 .brand-logo{
   width:44px;
   height:44px;
@@ -112,7 +119,7 @@ header{
   flex:0 0 auto;
 }
 
-/* Texte plus “éditorial” */
+/* Texte plus éditorial */
 .brand-text{
   max-width:260px;
   text-align:left;
@@ -185,13 +192,6 @@ header{
   font-weight:750;
 }
 
-/* Focus visible (WCAG) */
-a:focus-visible, button:focus-visible, .btn:focus-visible{
-  outline:3px solid var(--focus);
-  outline-offset:3px;
-  border-radius:14px;
-}
-
 /* MAIN */
 main{ padding:28px 0 46px; }
 
@@ -212,10 +212,20 @@ main{ padding:28px 0 46px; }
   line-height:1.2;
   letter-spacing:-.03em;
 }
+
+/* Correction importante : permettre plusieurs paragraphes dans le hero */
 .hero p{
-  margin:0;
+  margin:0 0 10px;
   color:var(--muted);
   font-size:1.07rem;
+  max-width:76ch;
+}
+.hero p:last-child{ margin-bottom:0; }
+
+/* Lead (utilisé dans nos pages) */
+.lead{
+  color:var(--text);
+  font-size:1.12rem;
   max-width:76ch;
 }
 
@@ -227,8 +237,17 @@ main{ padding:28px 0 46px; }
   border-radius:14px;
   padding:14px;
 }
+.notice h2{
+  margin:0 0 8px;
+  font-size:1.1rem;
+}
+.notice p{
+  margin:0 0 10px;
+  color:var(--muted);
+}
+.notice p:last-child{ margin-bottom:0; }
 
-/* Sections */
+/* Sections (ancienne classe, conservée si tu l’utilises ailleurs) */
 .section{
   margin-top:18px;
   padding:18px;
@@ -242,6 +261,25 @@ main{ padding:28px 0 46px; }
   font-size:1.25rem;
 }
 .section p{ color:var(--muted); }
+
+/* Nouvelles sections "content" (utilisées dans les pages qu’on a créées) */
+.content{
+  margin-top:18px;
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.95);
+  box-shadow:0 6px 14px rgba(16,42,67,.06);
+}
+.content h2{
+  margin:0 0 10px;
+  font-size:1.25rem;
+}
+.content p{
+  margin:0 0 10px;
+  color:var(--muted);
+}
+.content p:last-child{ margin-bottom:0; }
 
 /* Liens dans le contenu */
 main a:not(.btn):not(.menu a){
@@ -259,6 +297,7 @@ main a:not(.btn):not(.menu a):hover{
   flex-wrap:wrap;
   margin-top:14px;
 }
+
 .btn{
   padding:11px 15px;
   border-radius:14px;
@@ -267,10 +306,27 @@ main a:not(.btn):not(.menu a):hover{
   color:var(--text);
   font-weight:700;
 }
+.btn:hover{
+  text-decoration:none;
+}
+
 .btn-primary{
   border-color:transparent;
   background:linear-gradient(135deg,var(--accent),var(--accent2));
   color:#fff;
+}
+
+/* Lien discret dans les cards (classe .link utilisée dans nos pages) */
+.link{
+  display:inline-block;
+  margin-top:10px;
+  font-weight:750;
+  color:var(--accent2);
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.link:hover{
+  text-decoration-thickness:2px;
 }
 
 /* Grille */
@@ -280,6 +336,7 @@ main a:not(.btn):not(.menu a):hover{
   gap:14px;
   margin-top:18px;
 }
+
 .card{
   background:#fff;
   border:1px solid var(--border);
@@ -288,27 +345,75 @@ main a:not(.btn):not(.menu a):hover{
   box-shadow:var(--shadow2);
 }
 
+/* Subnav (comprendre.html) */
+.subnav{
+  margin-top:14px;
+  padding:10px 12px;
+  border:1px solid var(--menu-border);
+  border-radius:14px;
+  background:var(--menu-bg);
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+}
+.subnav a{
+  min-height:40px;
+  padding:8px 12px;
+  border-radius:12px;
+  border:1px solid transparent;
+  color:var(--text);
+  font-weight:650;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.subnav a:hover{
+  background:var(--menu-hover);
+  border-color:rgba(27,108,168,.20);
+  text-decoration:none;
+}
+
+/* Utilitaires */
+.small{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+/* Listes dans cards (outils.html) */
+.list{
+  margin:10px 0 0 18px;
+  padding:0;
+}
+.list li{
+  margin:6px 0;
+}
+
 /* Footer */
 footer{
   border-top:1px solid var(--border);
   padding:26px 0;
   background:linear-gradient(180deg,var(--surface),var(--surface2));
 }
+
 footer p{
   margin:0;
   color:var(--muted);
   font-size:.95rem;
 }
 
+/* Liens du footer (discrets) */
+footer a{ color:var(--muted); }
+footer a:hover{ color:var(--accent); }
+
 /* Responsive */
 @media (max-width:920px){
   .grid{ grid-template-columns:1fr; }
   .hero h1{ font-size:1.7rem; }
+  .subnav{ justify-content:flex-start; }
+  .menu{ gap:8px; }
+  .menu a{ padding:10px 12px; }
 }
-
-/* Liens du footer (discrets) */
-footer a{ color:var(--muted); }
-footer a:hover{ color:var(--accent); }
 
 /* Mouvement réduit */
 @media (prefers-reduced-motion: reduce){

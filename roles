@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Selon votre rôle | Protéger sans isoler</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Comprendre les situations entourant les mesures de protection selon le rôle : personne concernée, proche désigné ou proche non désigné. Repères éducatifs non prescriptifs.">
+  <link rel="stylesheet" href="./styles.css?v=4">
+</head>
+
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header id="site-header"></header>
+
+<main id="contenu" class="container">
+
+  <section class="hero">
+    <h1>Selon votre rôle</h1>
+
+    <p class="lead">
+      Une même situation peut être vécue très différemment selon la position occupée.
+      Cette page propose trois lectures possibles, sans établir de hiérarchie et sans
+      orienter des décisions.
+    </p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="#personne">Personne concernée</a>
+      <a class="btn" href="#proche-designe">Proche désigné</a>
+      <a class="btn" href="#proche-non-designe">Proche non désigné</a>
+    </div>
+  </section>
+
+  <section class="notice">
+    <h2>Une entrée par rôle, pas un positionnement</h2>
+    <p>
+      Il ne s’agit pas de vous classer ni de déterminer “où vous êtes rendu”.
+      L’objectif est plutôt de reconnaître que les repères de compréhension ne résonnent
+      pas de la même façon selon les responsabilités, les attentes et les liens.
+    </p>
+    <p>
+      Si vous hésitez, commencez simplement par la section qui vous parle le plus,
+      ou consultez d’abord <a href="comprendre.html">Comprendre les situations</a>.
+    </p>
+  </section>
+
+  <!-- PERSONNE CONCERNÉE -->
+  <section id="personne" class="content">
+    <h2>La personne concernée par la mesure</h2>
+
+    <p>
+      Pour la personne concernée, une mesure de protection peut modifier les repères,
+      les habitudes et parfois le sentiment de contrôle sur sa propre vie.
+      Il peut être difficile de comprendre ce qui change, pourquoi cela change,
+      et ce qui demeure possible.
+    </p>
+
+    <div class="grid" aria-label="Repères pour la personne concernée">
+      <div class="card">
+        <h3>Comprendre le sens de ce qui se passe</h3>
+        <p>
+          Mettre des mots sur la mesure, ce qu’elle vise à protéger, et ce qu’elle ne règle pas.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Se reconnaître comme sujet</h3>
+        <p>
+          Rappeler que la personne demeure au centre, avec son histoire, ses liens et ses repères.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Lire les effets sur les relations</h3>
+        <p>
+          Comprendre que les liens peuvent se transformer, parfois sans intention de rupture.
+        </p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="comprendre.html#relations">Relations et liens</a>
+      <a class="btn" href="comprendre.html#transitions">Transitions et incertitude</a>
+    </div>
+  </section>
+
+  <!-- PROCHES DÉSIGNÉS -->
+  <section id="proche-designe" class="content">
+    <h2>Les proches désignés</h2>
+
+    <p>
+      Les proches désignés portent souvent des responsabilités formelles.
+      Cette responsabilité peut aider, mais elle peut aussi créer des tensions :
+      avec la personne concernée, avec d’autres proches, ou avec ce que la situation impose.
+    </p>
+
+    <div class="grid" aria-label="Repères pour les proches désignés">
+      <div class="card">
+        <h3>Comprendre la portée du rôle</h3>
+        <p>
+          Clarifier ce qui relève de la responsabilité formelle et ce qui relève des liens personnels.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Exercer son jugement sans s’enfermer</h3>
+        <p>
+          Reconnaître la complexité, les informations partielles, et la pluralité des points de vue.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Maintenir l’équilibre avec la relation</h3>
+        <p>
+          Lire les effets des décisions sur les liens, et reconnaître les tensions possibles.
+        </p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="comprendre.html#roles">Comprendre les rôles</a>
+      <a class="btn" href="comprendre.html#tensions">Protection, autonomie, contrôle</a>
+    </div>
+  </section>
+
+  <!-- PROCHES NON DÉSIGNÉS -->
+  <section id="proche-non-designe" class="content">
+    <h2>Les proches non désignés</h2>
+
+    <p>
+      Les proches non désignés peuvent se sentir en marge, même lorsqu’ils demeurent
+      très concernés. Il peut être difficile de comprendre ce qui relève du cadre,
+      ce qui relève des choix des autres, et comment préserver une place relationnelle.
+    </p>
+
+    <div class="grid" aria-label="Repères pour les proches non désignés">
+      <div class="card">
+        <h3>Comprendre le cadre sans rôle officiel</h3>
+        <p>
+          Distinguer absence de rôle formel et absence de lien, et éviter les lectures trop rapides.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Reconnaître sa place relationnelle</h3>
+        <p>
+          Garder une lecture humaine : la situation est une configuration relationnelle, pas une simple procédure.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Lire les divergences de perception</h3>
+        <p>
+          Comprendre que les désaccords viennent souvent de perceptions différentes, amplifiées par le contexte.
+        </p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="comprendre.html#relations">Effets sur les relations</a>
+      <a class="btn" href="comprendre.html#roles">Rôles et responsabilités</a>
+    </div>
+  </section>
+
+  <!-- LIMITES -->
+  <section class="notice">
+    <h2>Ce que cette page ne fait pas</h2>
+    <p>
+      Cette page ne vous dit pas quoi faire et ne vous propose pas un parcours obligatoire.
+      Elle vise à offrir des repères de compréhension, en reconnaissant que les situations
+      sont complexes et évolutives.
+    </p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="outils.html">Outils et ressources</a>
+      <a class="btn" href="programme.html">Le programme</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="./include.js?v=1"></script>
+</body>
+</html>

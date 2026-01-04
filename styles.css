@@ -284,7 +284,16 @@ footer p{
   .hero h1{ font-size:1.7rem; }
 }
 
+/* Liens du footer (discrets) */
+footer a{
+  color: var(--muted);
+}
+footer a:hover{
+  color: var(--accent);
+}
+
 /* Mouvement réduit */
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
 }
+

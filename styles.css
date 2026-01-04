@@ -102,42 +102,14 @@ header{
   box-shadow:0 8px 18px rgba(16,42,67,.06);
 }
 
-/* Icône plus finie */
-.brand-mark{
+/* ✅ Logo SVG */
+.brand-logo{
   width:44px;
   height:44px;
   border-radius:16px;
-  background:linear-gradient(135deg,var(--accent),var(--accent2));
   box-shadow:var(--shadow2);
-  position:relative;
-  overflow:hidden;
-}
-
-/* ✅ Anti-bug : neutralise tout ancien "point" encore présent ailleurs */
-.brand-mark:after{
-  content:none !important;
-}
-
-/* Reflet */
-.brand-mark::before{
-  content:"";
-  position:absolute;
-  inset:-10px;
-  background:radial-gradient(circle at 25% 20%, rgba(255,255,255,.55), rgba(255,255,255,0) 55%);
-}
-
-/* Bouclier stylisé */
-.brand-mark::after{
-  content:"";
-  position:absolute;
-  left:50%;
-  top:52%;
-  width:16px;
-  height:18px;
-  transform:translate(-50%,-50%);
-  background:rgba(255,255,255,.92);
-  clip-path:polygon(50% 0%, 92% 14%, 92% 55%, 50% 100%, 8% 55%, 8% 14%);
-  opacity:.95;
+  display:block;
+  flex:0 0 auto;
 }
 
 /* Texte plus “éditorial” */
@@ -154,12 +126,12 @@ header{
   line-height:1.1;
 }
 
-/* (Optionnel) si tu ajoutes <span class="brand-accent"> */
+/* Accent du titre */
 .brand-accent{
   color:var(--accent2);
 }
 
-/* Sous-titre (si tu utilises brand-tagline) */
+/* Sous-titre */
 .brand-tagline{
   display:block;
   margin-top:3px;
@@ -342,4 +314,3 @@ footer a:hover{ color:var(--accent); }
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
 }
-

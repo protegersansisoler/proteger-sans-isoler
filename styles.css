@@ -113,6 +113,11 @@ header{
   overflow:hidden;
 }
 
+/* ✅ Anti-bug : neutralise tout ancien "point" encore présent ailleurs */
+.brand-mark:after{
+  content:none !important;
+}
+
 /* Reflet */
 .brand-mark::before{
   content:"";
@@ -337,3 +342,4 @@ footer a:hover{ color:var(--accent); }
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
 }
+

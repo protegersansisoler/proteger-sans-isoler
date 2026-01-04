@@ -114,17 +114,26 @@ header{
   background:rgba(255,255,255,.85);
 }
 
-.brand-text strong{
-  display:block;
-  font-size:1.15rem;
-  letter-spacing:-.02em;
+/* ✅ Ajustements : titre plus beau et retours contrôlés */
+.brand-text{
+  max-width:220px;
   text-align:center;
 }
+
+.brand-text strong{
+  display:block;
+  font-size:1.25rem;
+  font-weight:800;
+  letter-spacing:-.02em;
+  line-height:1.15;
+}
+
 .brand-text span{
   display:block;
+  margin-top:2px;
   color:var(--muted);
-  font-size:.92rem;
-  text-align:center;
+  font-size:.95rem;
+  letter-spacing:0;
 }
 
 /* Menu */
@@ -296,4 +305,3 @@ footer a:hover{
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
 }
-

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Selon votre rôle | Protéger sans isoler</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Repères de compréhension selon votre rôle : personne concernée, proche désigné, proche non désigné. Une lecture éducative, non prescriptive, sans hiérarchie.">
+  <meta name="description" content="Choisir une lecture selon votre rôle : personne concernée, proche désigné, proche non désigné. Repères éducatifs non prescriptifs.">
   <link rel="stylesheet" href="./styles.css?v=4">
 </head>
 
@@ -20,149 +20,56 @@
 
     <p class="lead">
       Une même situation peut être vécue très différemment selon la position occupée.
-      Cette page propose trois lectures possibles, sans établir de hiérarchie et sans orienter des décisions.
+      Choisissez la lecture qui vous correspond. Chaque page propose des repères éducatifs, sans orienter des décisions.
     </p>
 
-    <!-- ✅ Détox : on enlève les gros boutons qui “envoient ailleurs”.
-         On garde 1 bouton utile + 1 lien discret interne. -->
     <div class="actions">
-      <a class="btn btn-primary" href="#entrees">Choisir une lecture</a>
-      <a class="link" href="#plus-loin">Voir les liens utiles</a>
+      <a class="btn btn-primary" href="#choisir">Choisir mon rôle</a>
+      <a class="btn" href="comprendre.html">Comprendre les situations</a>
     </div>
   </section>
 
-  <!-- ✅ Détox : la grille sert de “portes d’entrée”, mais le clic amène vers une section PLUS COURTE.
-       (Quand tu feras tes 3 pages, tu remplaceras les href #... par role-xxx.html) -->
-  <section id="entrees" class="content">
+  <!-- HUB clair : 3 cartes = 3 pages -->
+  <section id="choisir" class="content">
     <h2>Choisir une lecture</h2>
+
     <p>
-      Choisissez la section qui vous ressemble le plus. Si vous hésitez, commencez par celle qui vous parle,
-      puis comparez avec une autre lecture.
+      Ces trois pages sont indépendantes. Si vous hésitez, commencez par celle qui vous semble la plus proche,
+      puis comparez avec une autre.
     </p>
 
-    <div class="grid" aria-label="Entrées par rôle">
+    <div class="grid" aria-label="Choix de rôle">
       <div class="card">
         <h3>Personne concernée</h3>
-        <p>Quand la mesure touche les repères, le quotidien et le sentiment de contrôle.</p>
-        <a class="link" href="#personne">Ouvrir</a>
+        <p>Repères quand la mesure touche les repères, le quotidien et le sentiment de contrôle.</p>
+        <a class="link" href="role-personne.html">Ouvrir</a>
       </div>
 
       <div class="card">
         <h3>Proche désigné</h3>
-        <p>Quand une responsabilité formelle s’ajoute aux liens personnels.</p>
-        <a class="link" href="#proche-designe">Ouvrir</a>
+        <p>Repères quand une responsabilité formelle s’ajoute aux liens personnels.</p>
+        <a class="link" href="role-proche-designe.html">Ouvrir</a>
       </div>
 
       <div class="card">
         <h3>Proche non désigné</h3>
-        <p>Quand on reste concerné, parfois en marge, avec des perceptions différentes.</p>
-        <a class="link" href="#proche-non-designe">Ouvrir</a>
+        <p>Repères quand on reste concerné, parfois en marge, avec des perceptions différentes.</p>
+        <a class="link" href="role-proche-non-designe.html">Ouvrir</a>
       </div>
     </div>
-
-    <!-- ✅ Micro-info pratique : repère pour l’utilisateur -->
-    <p class="small">
-      Astuce : si vous êtes à la fois proche et désigné, lisez “Proche désigné” en premier, puis “Proche non désigné”.
-    </p>
   </section>
 
-  <!-- ✅ Détox : on enlève la subnav lourde. Une mini-nav interne, courte, suffit. -->
-  <nav class="subnav" aria-label="Navigation de la page">
-    <a href="#personne">Personne</a>
-    <a href="#proche-designe">Proche désigné</a>
-    <a href="#proche-non-designe">Proche non désigné</a>
-    <a href="#limites">Limites</a>
-  </nav>
-
-  <!-- ✅ Détox : sections plus “scannables”.
-       - 2-3 paragraphes max
-       - 3 puces max
-       - pas de longs blocs -->
-  <section id="personne" class="content">
-    <h2>Personne concernée</h2>
-
-    <p>
-      Une mesure de protection peut modifier les repères, les habitudes et parfois le sentiment
-      de contrôle sur sa propre vie. Il peut être difficile de comprendre ce qui change,
-      pourquoi cela change, et ce qui demeure possible.
-    </p>
-
-    <h3>Trois repères</h3>
-    <ul class="list">
-      <li><strong>Donner du sens</strong> : comprendre ce que la mesure vise à protéger, et ce qu’elle ne règle pas.</li>
-      <li><strong>Rester au centre</strong> : la personne demeure un sujet, avec son histoire, ses liens et ses repères.</li>
-      <li><strong>Observer les liens</strong> : les relations peuvent se transformer, parfois sans intention de rupture.</li>
-    </ul>
-
-    <p class="small">
-      Pour approfondir : <a href="comprendre.html">Comprendre les situations</a> et <a href="outils.html">Outils et fiches</a>.
-    </p>
-  </section>
-
-  <section id="proche-designe" class="content">
-    <h2>Proche désigné</h2>
-
-    <p>
-      Une responsabilité formelle peut aider à structurer les actions, mais elle peut aussi créer
-      des tensions : avec la personne concernée, avec d’autres proches, ou avec des perceptions qui s’opposent.
-    </p>
-
-    <h3>Trois repères</h3>
-    <ul class="list">
-      <li><strong>Clarifier la portée</strong> : distinguer responsabilités formelles et liens personnels.</li>
-      <li><strong>Exercer le jugement</strong> : composer avec l’incertitude, les informations partielles et des points de vue différents.</li>
-      <li><strong>Préserver les liens</strong> : lire l’effet des décisions sur la relation et anticiper les tensions possibles.</li>
-    </ul>
-
-    <p class="small">
-      Pour approfondir : <a href="outils.html">Outils et fiches</a>.
-    </p>
-  </section>
-
-  <section id="proche-non-designe" class="content">
-    <h2>Proche non désigné</h2>
-
-    <p>
-      On peut se sentir en marge, même en restant très concerné. Il devient difficile de distinguer
-      ce qui relève du cadre, ce qui relève des choix des autres, et comment préserver une place relationnelle.
-    </p>
-
-    <h3>Trois repères</h3>
-    <ul class="list">
-      <li><strong>Comprendre le cadre</strong> : absence de rôle formel ne veut pas dire absence de lien.</li>
-      <li><strong>Garder une lecture humaine</strong> : ce n’est pas qu’une procédure, ce sont aussi des relations.</li>
-      <li><strong>Lire les perceptions</strong> : les désaccords viennent souvent d’écarts de lecture amplifiés par le contexte.</li>
-    </ul>
-
-    <p class="small">
-      Pour approfondir : <a href="comprendre.html">Comprendre les situations</a>.
-    </p>
-  </section>
-
-  <!-- ✅ Ajout d’un avertissement court (dans le sens “détox” que tu fais partout) -->
-  <section id="limites" class="notice">
+  <section class="notice">
     <h2>Important</h2>
-
     <p>
-      Cette page est éducative. Elle ne propose pas de conseils personnalisés et ne remplace pas
-      un accompagnement juridique, psychosocial ou clinique.
+      Ces pages sont proposées à des fins éducatives. Elles ne remplacent pas un accompagnement juridique,
+      psychosocial ou clinique et ne proposent pas de conseils personnalisés.
     </p>
-  </section>
-
-  <!-- ✅ Détox : une seule zone “liens utiles”, à la fin -->
-  <section id="plus-loin" class="content">
-    <h2>Liens utiles</h2>
 
     <p class="small">
-      Ces liens sont des portes d’entrée. Ils ne constituent pas un parcours obligatoire.
+      Pour des repères vers de l’information officielle ou des services, voir
+      <a href="ressources.html">Ressources externes</a>.
     </p>
-
-    <div class="actions">
-      <a class="btn btn-primary" href="outils.html">Outils et fiches</a>
-      <a class="btn" href="comprendre.html">Comprendre</a>
-      <a class="btn" href="programme.html">Le programme</a>
-      <a class="btn" href="ressources.html">Ressources externes</a>
-    </div>
   </section>
 
 </main>
@@ -170,6 +77,26 @@
 <footer id="site-footer"></footer>
 
 <script src="./include.js?v=2"></script>
+
+<!-- ✅ Compatibilité : anciens liens roles.html#... -->
+<script>
+  (function () {
+    const hash = (location.hash || "").replace("#", "").toLowerCase();
+    const map = {
+      "personne": "role-personne.html",
+      "proche-designe": "role-proche-designe.html",
+      "proche-non-designe": "role-proche-non-designe.html",
+      // variantes fréquentes
+      "prochedesigne": "role-proche-designe.html",
+      "prochenondesigne": "role-proche-non-designe.html"
+    };
+    if (hash && map[hash]) {
+      // remplace l’URL sans garder le hash (plus clair)
+      location.replace(map[hash]);
+    }
+  })();
+</script>
+
 </body>
 </html>
 

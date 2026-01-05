@@ -15,27 +15,21 @@
 
 <main id="contenu" class="container">
 
+  <!-- HERO ultra simple : pas de boutons -->
   <section class="hero">
     <h1>Selon votre rôle</h1>
 
     <p class="lead">
-      Une même situation peut être vécue très différemment selon la position occupée.
       Choisissez la lecture qui vous correspond. Chaque page propose des repères éducatifs, sans orienter des décisions.
     </p>
-
-    <div class="actions">
-      <a class="btn btn-primary" href="#choisir">Choisir mon rôle</a>
-      <a class="btn" href="comprendre.html">Comprendre les situations</a>
-    </div>
   </section>
 
-  <!-- HUB clair : 3 cartes = 3 pages -->
-  <section id="choisir" class="content">
+  <!-- HUB : 3 cartes, point. -->
+  <section class="content">
     <h2>Choisir une lecture</h2>
 
-    <p>
-      Ces trois pages sont indépendantes. Si vous hésitez, commencez par celle qui vous semble la plus proche,
-      puis comparez avec une autre.
+    <p class="small">
+      Ces trois pages sont indépendantes. Si vous hésitez, commencez par celle qui vous semble la plus proche.
     </p>
 
     <div class="grid" aria-label="Choix de rôle">
@@ -59,16 +53,12 @@
     </div>
   </section>
 
+  <!-- Avertissement court, sans liens additionnels -->
   <section class="notice">
     <h2>Important</h2>
     <p>
       Ces pages sont proposées à des fins éducatives. Elles ne remplacent pas un accompagnement juridique,
       psychosocial ou clinique et ne proposent pas de conseils personnalisés.
-    </p>
-
-    <p class="small">
-      Pour des repères vers de l’information officielle ou des services, voir
-      <a href="ressources.html">Ressources externes</a>.
     </p>
   </section>
 
@@ -78,7 +68,7 @@
 
 <script src="./include.js?v=2"></script>
 
-<!-- ✅ Compatibilité : anciens liens roles.html#... -->
+<!-- Compatibilité : anciens liens roles.html#... -->
 <script>
   (function () {
     const hash = (location.hash || "").replace("#", "").toLowerCase();
@@ -86,17 +76,14 @@
       "personne": "role-personne.html",
       "proche-designe": "role-proche-designe.html",
       "proche-non-designe": "role-proche-non-designe.html",
-      // variantes fréquentes
       "prochedesigne": "role-proche-designe.html",
       "prochenondesigne": "role-proche-non-designe.html"
     };
-    if (hash && map[hash]) {
-      // remplace l’URL sans garder le hash (plus clair)
-      location.replace(map[hash]);
-    }
+    if (hash && map[hash]) location.replace(map[hash]);
   })();
 </script>
 
 </body>
 </html>
+
 

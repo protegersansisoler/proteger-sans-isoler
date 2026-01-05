@@ -97,54 +97,70 @@ header{
   margin-top:8px;
 }
 
-/* Brand = badge plus signature */
+/* =========================
+   BRAND (badge discret)
+   ========================= */
+
+/* Brand = badge plus signature (discret) */
 .brand{
   display:flex;
-  gap:12px;
+  gap:10px;                 /* plus serré */
   align-items:center;
-  padding:10px 14px;
-  border-radius:18px;
+  padding:8px 12px;         /* plus petit */
+  border-radius:16px;       /* légèrement moins rond */
   border:1px solid rgba(224,219,207,.9);
   background:linear-gradient(180deg, rgba(255,255,255,.75), rgba(244,241,234,.55));
-  box-shadow:0 8px 18px rgba(16,42,67,.06);
+  box-shadow:0 6px 14px rgba(16,42,67,.06); /* ombre plus légère */
 }
 
-/* Logo SVG */
+/* Logo SVG (un peu plus petit) */
 .brand-logo{
-  width:44px;
-  height:44px;
-  border-radius:16px;
+  width:40px;
+  height:40px;
+  border-radius:14px;
   box-shadow:var(--shadow2);
   display:block;
   flex:0 0 auto;
 }
 
-/* Texte plus éditorial */
+/* Texte : enlever la limite qui forçait le retour à la ligne */
 .brand-text{
-  max-width:260px;
+  max-width:none;
   text-align:left;
+  line-height:1.15;
 }
 
 .brand-text strong{
   display:block;
-  font-size:1.28rem;
+  font-size:1.12rem;        /* un peu plus petit */
   font-weight:850;
   letter-spacing:-.02em;
-  line-height:1.1;
+  line-height:1.05;
+  white-space:nowrap;       /* ✅ évite "Protéger" / "sans isoler" */
 }
 
+/* Accent du titre */
 .brand-accent{ color:var(--accent2); }
 
+/* Sous-titre (plus discret) */
 .brand-tagline,
 .brand-text span{
   display:block;
-  margin-top:3px;
+  margin-top:2px;
   color:var(--muted);
-  font-size:.95rem;
+  font-size:.90rem;
   letter-spacing:.02em;
 }
 
-/* Menu */
+/* Mobile : autoriser la coupure si nécessaire */
+@media (max-width:520px){
+  .brand-text strong{ white-space:normal; }
+}
+
+/* =========================
+   MENU
+   ========================= */
+
 .menu{
   display:flex;
   gap:10px;
@@ -201,7 +217,7 @@ main{ padding:28px 0 46px; }
   letter-spacing:-.03em;
 }
 
-/* ✅ CORRECTION : largeur maîtrisée (pas plein écran), plus large que 76ch */
+/* ✅ largeur maîtrisée */
 .hero p{
   margin:0 0 10px;
   color:var(--muted);
@@ -210,7 +226,6 @@ main{ padding:28px 0 46px; }
 }
 .hero p:last-child{ margin-bottom:0; }
 
-/* Lead : même largeur, sans centrage */
 .hero .lead{
   color:var(--text);
   font-size:1.12rem;

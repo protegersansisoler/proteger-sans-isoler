@@ -133,21 +133,9 @@ header{
   line-height:1.1;
 }
 
-/* Accent du titre */
-.brand-accent{
-  color:var(--accent2);
-}
+.brand-accent{ color:var(--accent2); }
 
-/* Sous-titre */
-.brand-tagline{
-  display:block;
-  margin-top:3px;
-  color:var(--muted);
-  font-size:.95rem;
-  letter-spacing:.02em;
-}
-
-/* Fallback si ton HTML a juste .brand-text span */
+.brand-tagline,
 .brand-text span{
   display:block;
   margin-top:3px;
@@ -213,17 +201,17 @@ main{ padding:28px 0 46px; }
   letter-spacing:-.03em;
 }
 
-/* Correction importante : permettre plusieurs paragraphes dans le hero */
+/* 🔧 CORRECTION ICI */
 .hero p{
   margin:0 0 10px;
   color:var(--muted);
   font-size:1.07rem;
-  max-width:76ch;
+  max-width:none; /* plein largeur */
 }
 .hero p:last-child{ margin-bottom:0; }
 
-/* Lead (utilisé dans nos pages) */
-.lead{
+/* Intro seulement */
+.hero .lead{
   color:var(--text);
   font-size:1.12rem;
   max-width:76ch;
@@ -237,32 +225,12 @@ main{ padding:28px 0 46px; }
   border-radius:14px;
   padding:14px;
 }
-.notice h2{
-  margin:0 0 8px;
-  font-size:1.1rem;
-}
-.notice p{
-  margin:0 0 10px;
-  color:var(--muted);
-}
+.notice h2{ margin:0 0 8px; font-size:1.1rem; }
+.notice p{ margin:0 0 10px; color:var(--muted); }
 .notice p:last-child{ margin-bottom:0; }
 
-/* Sections (ancienne classe, conservée si tu l’utilises ailleurs) */
-.section{
-  margin-top:18px;
-  padding:18px;
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  background:rgba(255,255,255,.95);
-  box-shadow:0 6px 14px rgba(16,42,67,.06);
-}
-.section h2{
-  margin:0 0 10px;
-  font-size:1.25rem;
-}
-.section p{ color:var(--muted); }
-
-/* Nouvelles sections "content" (utilisées dans les pages qu’on a créées) */
+/* Sections */
+.section,
 .content{
   margin-top:18px;
   padding:18px;
@@ -271,24 +239,14 @@ main{ padding:28px 0 46px; }
   background:rgba(255,255,255,.95);
   box-shadow:0 6px 14px rgba(16,42,67,.06);
 }
-.content h2{
-  margin:0 0 10px;
-  font-size:1.25rem;
-}
-.content p{
-  margin:0 0 10px;
-  color:var(--muted);
-}
-.content p:last-child{ margin-bottom:0; }
 
-/* Liens dans le contenu */
-main a:not(.btn):not(.menu a){
-  text-decoration:underline;
-  text-underline-offset:2px;
-}
-main a:not(.btn):not(.menu a):hover{
-  text-decoration-thickness:2px;
-}
+.section h2,
+.content h2{ margin:0 0 10px; font-size:1.25rem; }
+
+.section p,
+.content p{ margin:0 0 10px; color:var(--muted); }
+.section p:last-child,
+.content p:last-child{ margin-bottom:0; }
 
 /* Actions / boutons */
 .actions{
@@ -306,27 +264,12 @@ main a:not(.btn):not(.menu a):hover{
   color:var(--text);
   font-weight:700;
 }
-.btn:hover{
-  text-decoration:none;
-}
+.btn:hover{ text-decoration:none; }
 
 .btn-primary{
   border-color:transparent;
   background:linear-gradient(135deg,var(--accent),var(--accent2));
   color:#fff;
-}
-
-/* Lien discret dans les cards (classe .link utilisée dans nos pages) */
-.link{
-  display:inline-block;
-  margin-top:10px;
-  font-weight:750;
-  color:var(--accent2);
-  text-decoration:underline;
-  text-underline-offset:2px;
-}
-.link:hover{
-  text-decoration-thickness:2px;
 }
 
 /* Grille */
@@ -345,50 +288,6 @@ main a:not(.btn):not(.menu a):hover{
   box-shadow:var(--shadow2);
 }
 
-/* Subnav (comprendre.html) */
-.subnav{
-  margin-top:14px;
-  padding:10px 12px;
-  border:1px solid var(--menu-border);
-  border-radius:14px;
-  background:var(--menu-bg);
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  justify-content:center;
-}
-.subnav a{
-  min-height:40px;
-  padding:8px 12px;
-  border-radius:12px;
-  border:1px solid transparent;
-  color:var(--text);
-  font-weight:650;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-}
-.subnav a:hover{
-  background:var(--menu-hover);
-  border-color:rgba(27,108,168,.20);
-  text-decoration:none;
-}
-
-/* Utilitaires */
-.small{
-  color:var(--muted);
-  font-size:.95rem;
-}
-
-/* Listes dans cards (outils.html) */
-.list{
-  margin:10px 0 0 18px;
-  padding:0;
-}
-.list li{
-  margin:6px 0;
-}
-
 /* Footer */
 footer{
   border-top:1px solid var(--border);
@@ -402,15 +301,10 @@ footer p{
   font-size:.95rem;
 }
 
-/* Liens du footer (discrets) */
-footer a{ color:var(--muted); }
-footer a:hover{ color:var(--accent); }
-
 /* Responsive */
 @media (max-width:920px){
   .grid{ grid-template-columns:1fr; }
   .hero h1{ font-size:1.7rem; }
-  .subnav{ justify-content:flex-start; }
   .menu{ gap:8px; }
   .menu a{ padding:10px 12px; }
 }

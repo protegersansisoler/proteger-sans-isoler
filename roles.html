@@ -23,13 +23,16 @@
       Cette page propose trois lectures possibles, sans établir de hiérarchie et sans orienter des décisions.
     </p>
 
+    <!-- ✅ Détox : on enlève les gros boutons qui “envoient ailleurs”.
+         On garde 1 bouton utile + 1 lien discret interne. -->
     <div class="actions">
-      <a class="btn btn-primary" href="#entrees">Choisir mon rôle</a>
-      <a class="link" href="#plus-loin">Aller plus loin</a>
+      <a class="btn btn-primary" href="#entrees">Choisir une lecture</a>
+      <a class="link" href="#plus-loin">Voir les liens utiles</a>
     </div>
   </section>
 
-  <!-- Entrées par rôle : navigation interne seulement -->
+  <!-- ✅ Détox : la grille sert de “portes d’entrée”, mais le clic amène vers une section PLUS COURTE.
+       (Quand tu feras tes 3 pages, tu remplaceras les href #... par role-xxx.html) -->
   <section id="entrees" class="content">
     <h2>Choisir une lecture</h2>
     <p>
@@ -41,105 +44,124 @@
       <div class="card">
         <h3>Personne concernée</h3>
         <p>Quand la mesure touche les repères, le quotidien et le sentiment de contrôle.</p>
-        <a class="link" href="#personne">Aller à cette section</a>
+        <a class="link" href="#personne">Ouvrir</a>
       </div>
 
       <div class="card">
         <h3>Proche désigné</h3>
         <p>Quand une responsabilité formelle s’ajoute aux liens personnels.</p>
-        <a class="link" href="#proche-designe">Aller à cette section</a>
+        <a class="link" href="#proche-designe">Ouvrir</a>
       </div>
 
       <div class="card">
         <h3>Proche non désigné</h3>
         <p>Quand on reste concerné, parfois en marge, avec des perceptions différentes.</p>
-        <a class="link" href="#proche-non-designe">Aller à cette section</a>
+        <a class="link" href="#proche-non-designe">Ouvrir</a>
       </div>
     </div>
+
+    <!-- ✅ Micro-info pratique : repère pour l’utilisateur -->
+    <p class="small">
+      Astuce : si vous êtes à la fois proche et désigné, lisez “Proche désigné” en premier, puis “Proche non désigné”.
+    </p>
   </section>
 
-  <!-- Subnav courte, interne -->
+  <!-- ✅ Détox : on enlève la subnav lourde. Une mini-nav interne, courte, suffit. -->
   <nav class="subnav" aria-label="Navigation de la page">
-    <a href="#personne">Personne concernée</a>
+    <a href="#personne">Personne</a>
     <a href="#proche-designe">Proche désigné</a>
     <a href="#proche-non-designe">Proche non désigné</a>
     <a href="#limites">Limites</a>
-    <a href="#plus-loin">Pour aller plus loin</a>
   </nav>
 
+  <!-- ✅ Détox : sections plus “scannables”.
+       - 2-3 paragraphes max
+       - 3 puces max
+       - pas de longs blocs -->
   <section id="personne" class="content">
-    <h2>La personne concernée par la mesure</h2>
+    <h2>Personne concernée</h2>
 
     <p>
-      Pour la personne concernée, une mesure de protection peut modifier les repères, les habitudes
-      et parfois le sentiment de contrôle sur sa propre vie. Il peut être difficile de comprendre
-      ce qui change, pourquoi cela change, et ce qui demeure possible.
+      Une mesure de protection peut modifier les repères, les habitudes et parfois le sentiment
+      de contrôle sur sa propre vie. Il peut être difficile de comprendre ce qui change,
+      pourquoi cela change, et ce qui demeure possible.
     </p>
 
-    <h3>Repères à garder en tête</h3>
+    <h3>Trois repères</h3>
     <ul class="list">
-      <li><strong>Comprendre le sens</strong> : mettre des mots sur ce que la mesure vise à protéger, et ce qu’elle ne règle pas.</li>
-      <li><strong>Se reconnaître comme sujet</strong> : la personne demeure au centre, avec son histoire, ses liens et ses repères.</li>
-      <li><strong>Lire les effets sur les relations</strong> : les liens peuvent se transformer, parfois sans intention de rupture.</li>
+      <li><strong>Donner du sens</strong> : comprendre ce que la mesure vise à protéger, et ce qu’elle ne règle pas.</li>
+      <li><strong>Rester au centre</strong> : la personne demeure un sujet, avec son histoire, ses liens et ses repères.</li>
+      <li><strong>Observer les liens</strong> : les relations peuvent se transformer, parfois sans intention de rupture.</li>
     </ul>
+
+    <p class="small">
+      Pour approfondir : <a href="comprendre.html">Comprendre les situations</a> et <a href="outils.html">Outils et fiches</a>.
+    </p>
   </section>
 
   <section id="proche-designe" class="content">
-    <h2>Les proches désignés</h2>
+    <h2>Proche désigné</h2>
 
     <p>
-      Les proches désignés portent souvent des responsabilités formelles. Cette responsabilité peut aider,
-      mais elle peut aussi créer des tensions : avec la personne concernée, avec d’autres proches,
-      ou avec ce que la situation impose.
+      Une responsabilité formelle peut aider à structurer les actions, mais elle peut aussi créer
+      des tensions : avec la personne concernée, avec d’autres proches, ou avec des perceptions qui s’opposent.
     </p>
 
-    <h3>Repères à garder en tête</h3>
+    <h3>Trois repères</h3>
     <ul class="list">
-      <li><strong>Comprendre la portée du rôle</strong> : distinguer la responsabilité formelle et les liens personnels.</li>
-      <li><strong>Exercer son jugement</strong> : reconnaître la complexité, les informations partielles, la pluralité des points de vue.</li>
-      <li><strong>Maintenir l’équilibre relationnel</strong> : lire les effets des décisions sur les liens et anticiper les tensions possibles.</li>
+      <li><strong>Clarifier la portée</strong> : distinguer responsabilités formelles et liens personnels.</li>
+      <li><strong>Exercer le jugement</strong> : composer avec l’incertitude, les informations partielles et des points de vue différents.</li>
+      <li><strong>Préserver les liens</strong> : lire l’effet des décisions sur la relation et anticiper les tensions possibles.</li>
     </ul>
+
+    <p class="small">
+      Pour approfondir : <a href="outils.html">Outils et fiches</a>.
+    </p>
   </section>
 
   <section id="proche-non-designe" class="content">
-    <h2>Les proches non désignés</h2>
+    <h2>Proche non désigné</h2>
 
     <p>
-      Les proches non désignés peuvent se sentir en marge, même lorsqu’ils demeurent très concernés.
-      Il peut être difficile de comprendre ce qui relève du cadre, ce qui relève des choix des autres,
-      et comment préserver une place relationnelle.
+      On peut se sentir en marge, même en restant très concerné. Il devient difficile de distinguer
+      ce qui relève du cadre, ce qui relève des choix des autres, et comment préserver une place relationnelle.
     </p>
 
-    <h3>Repères à garder en tête</h3>
+    <h3>Trois repères</h3>
     <ul class="list">
-      <li><strong>Comprendre le cadre</strong> : distinguer absence de rôle formel et absence de lien.</li>
-      <li><strong>Reconnaître sa place relationnelle</strong> : garder une lecture humaine, ce n’est pas qu’une procédure.</li>
-      <li><strong>Lire les divergences de perception</strong> : les désaccords viennent souvent de perceptions différentes amplifiées par le contexte.</li>
+      <li><strong>Comprendre le cadre</strong> : absence de rôle formel ne veut pas dire absence de lien.</li>
+      <li><strong>Garder une lecture humaine</strong> : ce n’est pas qu’une procédure, ce sont aussi des relations.</li>
+      <li><strong>Lire les perceptions</strong> : les désaccords viennent souvent d’écarts de lecture amplifiés par le contexte.</li>
     </ul>
-  </section>
 
-  <section id="limites" class="notice">
-    <h2>Ce que cette page ne fait pas</h2>
-
-    <p>
-      Cette page ne vous dit pas quoi faire et ne vous propose pas un parcours obligatoire.
-      Elle vise à offrir des repères de compréhension, en reconnaissant que les situations sont complexes et évolutives.
+    <p class="small">
+      Pour approfondir : <a href="comprendre.html">Comprendre les situations</a>.
     </p>
   </section>
 
-  <!-- ✅ Une seule zone de liens externes -->
-  <section id="plus-loin" class="content">
-    <h2>Pour aller plus loin</h2>
+  <!-- ✅ Ajout d’un avertissement court (dans le sens “détox” que tu fais partout) -->
+  <section id="limites" class="notice">
+    <h2>Important</h2>
 
     <p>
-      Si vous souhaitez approfondir, voici quelques portes d’entrée. Ce sont des repères éducatifs,
-      pas des consignes.
+      Cette page est éducative. Elle ne propose pas de conseils personnalisés et ne remplace pas
+      un accompagnement juridique, psychosocial ou clinique.
+    </p>
+  </section>
+
+  <!-- ✅ Détox : une seule zone “liens utiles”, à la fin -->
+  <section id="plus-loin" class="content">
+    <h2>Liens utiles</h2>
+
+    <p class="small">
+      Ces liens sont des portes d’entrée. Ils ne constituent pas un parcours obligatoire.
     </p>
 
     <div class="actions">
-      <a class="btn btn-primary" href="outils.html">Outils et ressources</a>
-      <a class="btn" href="comprendre.html">Comprendre les situations</a>
+      <a class="btn btn-primary" href="outils.html">Outils et fiches</a>
+      <a class="btn" href="comprendre.html">Comprendre</a>
       <a class="btn" href="programme.html">Le programme</a>
+      <a class="btn" href="ressources.html">Ressources externes</a>
     </div>
   </section>
 
@@ -147,6 +169,7 @@
 
 <footer id="site-footer"></footer>
 
-<script src="./include.js?v=1"></script>
+<script src="./include.js?v=2"></script>
 </body>
 </html>
+

@@ -26,7 +26,7 @@
     </p>
   </section>
 
-  <!-- HUB : 3 cartes, point. -->
+  <!-- HUB : 3 cartes -->
   <section class="content" aria-labelledby="titre-choisir-role">
     <h2 id="titre-choisir-role">Choisir une lecture</h2>
 
@@ -36,7 +36,6 @@
     </p>
 
     <div class="grid" aria-label="Choix de rôle">
-
       <div class="card">
         <h3>Personne concernée</h3>
         <p>Repères quand la mesure touche les repères, le quotidien et le sentiment de contrôle.</p>
@@ -54,11 +53,10 @@
         <p>Repères quand on reste concerné, parfois en marge, avec des perceptions différentes.</p>
         <a class="link" href="role-proche-non-designe.html" aria-label="Ouvrir la page Proche non désigné">Ouvrir</a>
       </div>
-
     </div>
   </section>
 
-  <!-- Avertissement court, sans liens additionnels -->
+  <!-- Avertissement court -->
   <section class="notice" aria-labelledby="titre-important">
     <h2 id="titre-important">Important</h2>
     <p>
@@ -71,20 +69,12 @@
 
 <footer id="site-footer"></footer>
 
-<script src="./include.js?v=2"></script>
-
 <!-- Compatibilité : anciens liens roles.html#... -->
 <script>
   (function () {
-    // hash sans #, sans paramètres (au cas où)
     var raw = (location.hash || "").replace("#", "");
     if (!raw) return;
 
-    // Normalisation tolérante
-    // - minuscules
-    // - retire accents simples
-    // - remplace _ par -
-    // - garde seulement [a-z0-9-]
     var h = raw.toLowerCase()
       .replace(/_/g, "-")
       .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
@@ -101,6 +91,9 @@
     if (map[h]) location.replace(map[h]);
   })();
 </script>
+
+<!-- Même fin que les autres pages -->
+<script src="./include.js?v=4"></script>
 
 </body>
 </html>

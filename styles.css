@@ -201,20 +201,20 @@ main{ padding:28px 0 46px; }
   letter-spacing:-.03em;
 }
 
-/* 🔧 CORRECTION ICI */
+/* ✅ CORRECTION : largeur maîtrisée (pas plein écran), plus large que 76ch */
 .hero p{
   margin:0 0 10px;
   color:var(--muted);
   font-size:1.07rem;
-  max-width:none; /* plein largeur */
+  max-width:90ch;
 }
 .hero p:last-child{ margin-bottom:0; }
 
-/* Intro seulement */
+/* Lead : même largeur, sans centrage */
 .hero .lead{
   color:var(--text);
   font-size:1.12rem;
-  max-width:76ch;
+  max-width:90ch;
 }
 
 /* Notice */

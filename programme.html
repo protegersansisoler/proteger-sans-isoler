@@ -15,7 +15,7 @@
 
 <main id="contenu" class="container">
 
-  <!-- HERO -->
+  <!-- HERO (détox : 1 seul CTA + 1 lien discret) -->
   <section class="hero">
     <h1>Le programme</h1>
 
@@ -26,12 +26,8 @@
     </p>
 
     <div class="actions">
-      <a class="btn btn-primary" href="comprendre.html">
-        Comprendre les situations
-      </a>
-      <a class="btn" href="roles.html">
-        Selon votre rôle
-      </a>
+      <a class="btn" href="#structure">Comment utiliser ce site</a>
+      <a class="link" href="comprendre.html">Aller à Comprendre</a>
     </div>
   </section>
 
@@ -79,6 +75,12 @@
       situations, afin qu’elles puissent être abordées avec davantage de clarté,
       de recul et de nuance.
     </p>
+
+    <!-- Détox : liens discrets (pas de gros boutons au milieu) -->
+    <p class="small">
+      Pour approfondir : <a href="comprendre.html">Comprendre les situations</a> et
+      <a href="roles.html">Selon votre rôle</a>.
+    </p>
   </section>
 
   <!-- PRINCIPES -->
@@ -121,12 +123,12 @@
   </section>
 
   <!-- STRUCTURE -->
-  <section class="content">
-    <h2>Comment le programme est structuré</h2>
+  <section id="structure" class="content">
+    <h2>Comment utiliser ce site</h2>
 
     <p>
-      Le programme est composé de différents contenus et documents, qui peuvent être
-      consultés de manière autonome, selon les besoins et les questionnements.
+      Le programme est composé de contenus et d’outils qui peuvent être consultés
+      de manière autonome, selon vos besoins et vos questions du moment.
     </p>
 
     <p>
@@ -136,12 +138,25 @@
     </p>
 
     <p>
-      Cette souplesse vise à respecter la diversité des situations et des expériences,
-      tout en maintenant une cohérence d’ensemble.
+      Une façon simple d’entrer :
+    </p>
+
+    <ul class="list">
+      <li><strong>Comprendre</strong> : pour des repères de lecture (relations, rôles, tensions, transitions).</li>
+      <li><strong>Selon votre rôle</strong> : pour lire la situation depuis votre position.</li>
+      <li><strong>Outils et fiches</strong> : pour des fiches courtes, ciblées, consultables à la carte.</li>
+    </ul>
+
+    <!-- Détox : pas de gros boutons ici, juste des liens discrets -->
+    <p class="small">
+      Accès direct :
+      <a href="comprendre.html">Comprendre</a>,
+      <a href="roles.html">Selon votre rôle</a>,
+      <a href="outils.html">Outils et fiches</a>.
     </p>
   </section>
 
-  <!-- LIMITES -->
+  <!-- LIMITES (fin de page : OK d’avoir des boutons) -->
   <section class="notice">
     <h2>Ce que le programme ne fait pas</h2>
 
@@ -156,12 +171,8 @@
     </p>
 
     <div class="actions">
-      <a class="btn btn-primary" href="outils.html">
-        Outils et ressources
-      </a>
-      <a class="btn" href="apropos.html">
-        À propos
-      </a>
+      <a class="btn btn-primary" href="outils.html">Outils et fiches</a>
+      <a class="btn" href="apropos.html">À propos</a>
     </div>
   </section>
 
@@ -172,3 +183,4 @@
 <script src="./include.js?v=1"></script>
 </body>
 </html>
+
